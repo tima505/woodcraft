@@ -269,8 +269,9 @@ const markDone = async () => {
 }
 .stage-status {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 .stage-worker {
   font-size: 0.85rem;
@@ -290,12 +291,15 @@ const markDone = async () => {
 
 /* BADGES */
 .status-badge {
-  font-size: 0.75rem;
-  padding: 4px 10px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.65rem;
+  padding: 2px 8px;
   border-radius: 4px;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
+  line-height: 1.4;
 }
 .status-pending { 
   background: var(--bg-color); 
@@ -303,18 +307,19 @@ const markDone = async () => {
   border: 1px solid var(--border-color);
 }
 .status-active { 
-  background: var(--border-color); 
-  color: var(--text-main); 
-  border: 1px solid var(--text-muted);
+  background: #eef2ff;
+  color: #4f46e5;
+  border: 1px solid #c7d2fe;
 }
 .status-done { 
-  background: var(--border-color); 
-  color: var(--text-muted); 
+  background: #f0fdf4;
+  color: #16a34a;
+  border: 1px solid #bbf7d0;
 }
 .status-issue { 
-  background: rgba(226, 75, 74, 0.1); 
-  color: var(--color-overdue); 
-  border: 1px solid var(--color-overdue);
+  background: #fef2f2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
 }
 .status-overdue {
   background: var(--color-overdue);

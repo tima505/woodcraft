@@ -26,13 +26,13 @@ const status = computed(() => getDeadlineStatus(props.deadline))
 .deadline-badge {
   display: inline-flex;
   align-items: center;
-  margin-top: 6px;
-  font-size: 0.7rem;
-  letter-spacing: 0.5px;
+  font-size: 0.65rem;
+  letter-spacing: 0.3px;
   text-transform: uppercase;
-  padding: 4px 10px;
-  border-radius: 20px;
-  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  line-height: 1.4;
 }
 
 /* Overdue is vibrant red */
